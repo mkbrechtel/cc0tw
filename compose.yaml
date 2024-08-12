@@ -1,0 +1,9 @@
+# setup a dev environment with docker
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Containerfile
+    volumes:
+      - ./:/app
+    working_dir: /app
